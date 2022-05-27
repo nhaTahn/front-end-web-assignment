@@ -1,9 +1,7 @@
-# HKGN-web-assignment
-
 **Hướng dẫn sử dụng:**
 
 **I. Clone:**
-git clone https://github.com/phuockaus/HKGN-web-assignment.git
+git clone https://github.com/nhaTahn/front-end-web-assignment.git
 
 **II. Commit:**
 Trước khi bắt đầu làm gì, nhớ git pull trước để cập nhật lại dữ liệu trên local. Sau đó chuyển sang nhánh của mình và bắt đầu code. Cách chuyển nhánh: git checkout tên-nhánh.
