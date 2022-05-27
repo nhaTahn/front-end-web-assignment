@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import logo from '../../logo.svg';
 import './navbar.css';
 
-export default function  Navbar() {
+export default function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
