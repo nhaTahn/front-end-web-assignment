@@ -1,7 +1,13 @@
 **Hướng dẫn sử dụng:**
 
+Chạy code react thì phải down npm về :v 
+xong cd vào folder assignment
+down thêm yarn 
+gòi chạy: yarn 
+xong yarn start 
+để chạy nha
 **I. Clone:**
-<<<<<<< HEAD
+
 git clone https://github.com/nhaTahn/front-end-web-assignment.git
 =======
 **II. Commit:**
