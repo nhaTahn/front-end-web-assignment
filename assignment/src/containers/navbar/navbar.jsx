@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-
-import logo from '../../logo.svg';
+import {Link} from "react-router-dom"
+import logo from "../../logo.svg"
 import './navbar.css';
 
 export default function Navbar() {
@@ -9,18 +9,13 @@ export default function Navbar() {
   return (
     <div className="navbar">
       <div className="navbar-links">
-        <div href="/"  className="navbar-links_logo">
-          <img src={logo} />
-        </div>
-        <div className="navbar-links_container">
-          <p><a href="/">Home</a></p>
-          <p><a href="/product">Product</a></p>
-          <p><a href="/about">About</a></p>
-        </div>
+        <Link to="/"> Home</Link>
+        <Link to="/about"> About</Link>
+        <Link to="product">Product</Link>
       </div>
       <div  className="navbar-sign">
-        <p><a href="/login">Sign in</a></p>
-        <button type="button"><a href="sign_up">Sign up</a></button>
+        <p><Link to="/login">Sign in</Link></p>
+        <button type="button"><Link to="/sign_up">Sign up</Link></button>
       </div>
       
     </div>

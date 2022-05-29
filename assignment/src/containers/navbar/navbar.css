@@ -10,7 +10,9 @@
     flex: 1;
     display: flex;
     justify-content: flex-start;
+    background-color: rgba(119, 75, 75, 0.793);
     align-items: center;
+    color: white;
 }
 
 .navbar-links_logo {
