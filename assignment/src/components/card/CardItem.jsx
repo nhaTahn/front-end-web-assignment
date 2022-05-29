@@ -9,7 +9,7 @@ export default function CardItem(props){
                         <img src={props.src} alt="Info Card" className="cards_item_img"></img>
                     </figure>
                     <div className="cards_item_info">
-                        <h5 className="cards_item_text" />
+                        <h5 className="cards_item_text">{props.text}</h5>
                     </div>
                 </Link>
             </li>

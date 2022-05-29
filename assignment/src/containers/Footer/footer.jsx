@@ -1,5 +1,5 @@
 import React from 'react';
-import gpt3Logo from '../../logo.svg';
+import logo from '../../images/hcmut.png';
 import './footer.css';
 
 const Footer = () => (
@@ -10,8 +10,8 @@ const Footer = () => (
 
     <div className="footer-links">
       <div className="footer-links_logo">
-        <img src={gpt3Logo} alt="gpt3_logo" />
-        <p> <br />#######################</p>
+        <img src={logo} alt="logo" />
+        <p> <br />Lập trình web</p>
       </div>
       <div className="footer-links_div">
         <h4>Links</h4>

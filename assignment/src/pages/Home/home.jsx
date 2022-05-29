@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Header } from '../../containers';
-import { Card , Navbar } from '../../components';
+import { Card } from '../../components';
 
 export default function Home() {
   return (

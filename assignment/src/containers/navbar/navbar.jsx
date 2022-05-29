@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import {Link} from "react-router-dom"
 import { Button } from "../../components"
+import logo from "../../images/hcmut.png"
 import './navbar.css';
+import { FaBars, FaTimes } from "react-icons/fa";
+
 
 export default function Navbar() {
   const [click, setClick] = useState(false);
@@ -22,13 +25,21 @@ export default function Navbar() {
     showButton();
   }, []);
 
+  let menu;
+  if(click){
+    menu = <FaTimes/>
+  } else {
+    menu = <FaBars/>
+  };
+
   window.addEventListener('resize', showButton);
   return (
     <div className="navbar">
       <div className="navbar-container">
-        <Link to="/" className="navbar-logo">BK Ảo Vãi </Link>
+        <Link to="/" className="navbar-logo"><img src={logo} alt="logo"></img>
+          BK Ảo Vãi </Link>
         <div className='menu-icon' onClick={handleClick}>
-            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+          {menu}
         </div>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
           <li className='nav-item'>
@@ -40,15 +51,13 @@ export default function Navbar() {
           <li className='nav-item'>
             <Link to="/about" className='nav-links' onClick={closeMobileMenu}> About</Link>
           </li>
-          <li>
-            <Link to="sign-up"  className='nav-links-mobile' onClick={closeMobileMenu}>Sign Up</Link>
-          </li>
+          
           <li>
             <Link to="sign-up"  className='nav-links-mobile' onClick={closeMobileMenu}>Sign In</Link>
           </li>
         </ul>
-        {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}\
         {button && <Button buttonStyle='btn--outline'>SIGN IN</Button>}
+
       </div>
       
       

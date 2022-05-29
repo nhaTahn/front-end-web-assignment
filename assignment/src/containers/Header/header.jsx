@@ -4,7 +4,7 @@ import {Button } from '../../components'
 import vid from './video/video-2.mp4';
 const Header = () => (
   <div className="header-container">
-    <video controls autostart autoPlay loop muted src={vid} type="video/mp4" />
+    <video controls autoPlay loop muted src={vid} type="video/mp4" />
     <h1> Welcome to home page</h1>
     <p>Place to improve your security.</p>
     <div className="header-btns">
