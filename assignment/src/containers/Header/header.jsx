@@ -1,24 +1,14 @@
 import React from 'react';
-// import people from '../../assets/people.png';
-// import ai from '../../assets/ai.png';
 import './header.css';
-
+import {Button } from '../../components'
+import vid from './video/video-2.mp4';
 const Header = () => (
-  <div className="gpt3__header section__padding" id="home">
-    <div className="gpt3__header-content">
-      <h1 className="gradient__text">Let&apos;s Build Something amazing with GPT-3 OpenAI</h1>
-      <p>Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment. Party we years to order allow asked of.</p>
-
-      <div className="gpt3__header-content__input">
-        <input type="email" placeholder="Your Email Address" />
-        <button type="button">Get Started</button>
-      </div>
-
-      
-    </div>
-
-    <div className="gpt3__header-image">
-     
+  <div className="header-container">
+    <video controls autostart autoPlay loop muted src={vid} type="video/mp4" />
+    <h1> Welcome to home page</h1>
+    <p>Place to improve your security.</p>
+    <div className="header-btns">
+      <Button className='btns' buttonStyle='btn--outline' buttonSize='btn--large' >Get Started</Button>
     </div>
   </div>
 );
