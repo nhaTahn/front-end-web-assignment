@@ -14,7 +14,7 @@ export default function Cards(){
                 <div className="card_wrapper">
                     <h1>Chuyển đổi số</h1>
                     <ul className="cards_item">
-                        <CardItem src={pic1} text='Chuyển đổi số SME' label='cds SME ' path='/services'/>
+                        <CardItem src={pic1} text='Chuyển đổi số SME' label='cds SME ' path='/services' shorttext='abcdddsscx'/>
                         <CardItem src={pic2} text='Chuyển đổi số GOV' label='cds GOV' path='/services'/>
                     </ul>
                     <h1>An Ninh Mạng</h1>

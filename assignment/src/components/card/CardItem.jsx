@@ -10,6 +10,7 @@ export default function CardItem(props){
                     </figure>
                     <div className="cards_item_info">
                         <h5 className="cards_item_text">{props.text}</h5>
+                        <p>{props.shorttext}</p>
                     </div>
                 </Link>
             </li>

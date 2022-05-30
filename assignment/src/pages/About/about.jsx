@@ -1,12 +1,12 @@
 import React from "react";
 
-import { Article } from '../../components';
+import { Card ,Article } from '../../components';
 
 export default function Home() {
   return (
     <div>
         <Article />
-        <h2>worrlddsss</h2>
+        <Card />
     </div>
    
   );
