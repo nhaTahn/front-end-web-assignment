@@ -4,7 +4,7 @@ import { Button } from "../../components"
 import logo from "../../images/hcmut.png"
 import './navbar.css';
 import { FaBars, FaTimes } from "react-icons/fa";
-
+import { Login } from "../../pages"
 
 export default function Navbar() {
   const [click, setClick] = useState(false);
@@ -49,14 +49,14 @@ export default function Navbar() {
             <Link to="/product" className='nav-links' onClick={closeMobileMenu}> Products</Link>
           </li>
           <li className='nav-item'>
-            <Link to="/about" className='nav-links' onClick={closeMobileMenu}> About</Link>
+            <Link to="/contact" className='nav-links' onClick={closeMobileMenu}> Contact</Link>
           </li>
           
           <li>
-            <Link to="sign-up"  className='nav-links-mobile' onClick={closeMobileMenu}>Sign In</Link>
+            <Link to="/sign_in" element={<Login/>}  className='nav-links-mobile' onClick={closeMobileMenu}>Sign In</Link>
           </li>
         </ul>
-        {button && <Button buttonStyle='btn--outline'>SIGN IN</Button>}
+        {button && <Button element={<Login/>}  buttonStyle='btn--outline'>Sign In</Button>}
 
       </div>
       

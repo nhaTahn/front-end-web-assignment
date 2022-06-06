@@ -1,0 +1,13 @@
+.blank_space {
+  width: auto;
+  height: 30px;
+}
+
+#Signupform {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  
+  background-repeat: round;
+  height: 100%;
+}

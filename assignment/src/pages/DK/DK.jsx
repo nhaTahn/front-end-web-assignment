@@ -1,11 +1,10 @@
 import React from "react";
-
+import { Article } from '../../components';
 
 export default function Products() {
   return (
     <div>
-       
-        <h2>Hello</h2>
+        <Article />
     </div>
    
   );
